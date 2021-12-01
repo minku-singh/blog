@@ -1,32 +1,40 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'https://twitter.com/minku_singhh',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
+    logo: 'https://twitter.com/minku_singhh',
+    logoLink: 'https://twitter.com/minku_singhh',
     title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+      "<a href='https://twitter.com/minku_singhh'><img class='img-responsive' src='https://twitter.com/minku_singhh' alt='Twitter' /></a>",
+    githubUrl: 'https://github.com/minku-singh',
     helpUrl: '',
     tweetText: '',
     social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
+		    <a href="https://twitter.com/minku_singhh" target="_blank" rel="noopener">
 		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Twitter'}/>
+		        <img title = "Twitter" src='https://cdn-icons-png.flaticon.com/512/123/123728.png' alt={'Twitter'}/>
 		      </div>
 		    </a>
 		  </li>
 			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
+		    <a href="https://www.linkedin.com/in/minku-singh/" target="_blank" rel="noopener">
 		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
+		        <img title = "LinkedIn" src='https://cdn-icons-png.flaticon.com/512/61/61109.png' alt={'LinkedIn'}/>
 		      </div>
 		    </a>
-		  </li>`,
+		  </li>
+      <li>
+		    <a href="https://github.com/minku-singh" target="_blank" rel="noopener">
+		      <div class="discordBtn">
+		        <img title = "github" src='https://cdn-icons-png.flaticon.com/512/38/38401.png' alt={'LinkedIn'}/>
+		      </div>
+		    </a>
+		  </li>
+      `,
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,

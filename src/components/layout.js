@@ -5,7 +5,6 @@ import { MDXProvider } from '@mdx-js/react';
 import ThemeProvider from './theme/themeProvider';
 import mdxComponents from './mdxComponents';
 import Sidebar from './sidebar';
-import RightSidebar from './rightSidebar';
 import config from '../../config.js';
 
 const Wrapper = styled('div')`
@@ -18,7 +17,7 @@ const Wrapper = styled('div')`
   }
 
   .sideBarUL .item > a:hover {
-    background-color: #1ed3c6;
+    background-color: #ffa500;
     color: #fff !important;
 
     /* background: #F8F8F8 */
@@ -58,10 +57,6 @@ const LeftSideBarWidth = styled('div')`
   width: 298px;
 `;
 
-const RightSideBarWidth = styled('div')`
-  width: 224px;
-`;
-
 const Layout = ({ children, location }) => (
   <ThemeProvider location={location}>
     <MDXProvider components={mdxComponents}>
@@ -69,18 +64,9 @@ const Layout = ({ children, location }) => (
         <LeftSideBarWidth className={'hiddenMobile'}>
           <Sidebar location={location} />
         </LeftSideBarWidth>
-        {config.sidebar.title ? (
-          <div
-            className={'sidebarTitle sideBarShow'}
-            dangerouslySetInnerHTML={{ __html: config.sidebar.title }}
-          />
-        ) : null}
         <Content>
           <MaxWidth>{children}</MaxWidth>
         </Content>
-        <RightSideBarWidth className={'hiddenMobile'}>
-          <RightSidebar location={location} />
-        </RightSideBarWidth>
       </Wrapper>
     </MDXProvider>
   </ThemeProvider>

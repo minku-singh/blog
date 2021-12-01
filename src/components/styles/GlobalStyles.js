@@ -3,6 +3,7 @@ import { css } from '@emotion/react';
 export const baseStyles = css`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
   * {
     margin: 0;
     padding: 0;
@@ -28,7 +29,7 @@ export const baseStyles = css`
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif,
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-    font-size: 16px;
+    font-size: 18px;
     scroll-behavior: smooth;
   }
 
@@ -38,7 +39,7 @@ export const baseStyles = css`
   }
 
   body {
-    font-family: 'Roboto';
+    font-family: 'Space Mono', monospace;
   }
   .visibleMobile {
     display: none;
@@ -76,7 +77,7 @@ export const baseStyles = css`
     border-radius: 1px;
     margin: 0 auto;
     margin-top: 4px;
-    background-color: #001934;
+    background-color: #080808;
   }
   .navBarToggle .iconBar:first-child {
     margin-top: 0px;
@@ -105,7 +106,7 @@ export const baseStyles = css`
   .divider {
     height: 30px;
     margin: 0 15px;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid #ffa500;
   }
   .navBarULRight {
     /* position: absolute;
@@ -257,13 +258,14 @@ export const baseStyles = css`
     padding: 0 !important;
   }
   .navBarDefault {
-    background-color: #001934;
+    background-color: #080808;
     border-radius: 0;
     border-top: 0;
     margin-bottom: 0;
     border: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     box-shadow: -1px 0px 4px 1px rgba(175, 158, 232, 0.4);
     -webkit-box-shadow: -1px 0px 4px 1px rgba(175, 158, 232, 0.4);
     -moz-box-shadow: -1px 0px 4px 1px rgba(175, 158, 232, 0.8);
@@ -278,6 +280,11 @@ export const baseStyles = css`
     padding-right: 20px;
     display: flex;
     align-items: center;
+    font-size: 20px;
+  }
+  .navBarHeader h1{
+    color: #ffa500;
+    text-shadow: 2px 2px 10px #fea500;
   }
   .navBarBrand {
     padding: 0px 0px;
@@ -318,7 +325,7 @@ export const baseStyles = css`
   }
   pre {
     border: 0 !important;
-    background-color: rgb(245, 247, 249); /* !important; */
+    background-color: #080808; /* !important; */
   }
 
   blockquote {
@@ -339,24 +346,23 @@ export const baseStyles = css`
     display: contents;
   }
   .discordBtn, .twitterBtn {
-    border-radius: 4px;
-    border: solid 1px #d1d2d3;
-    background-color: #f1f5f8;
-    width: 20px;
-    height: 20px;
-    padding-top: 2px;
+    border-radius: 5px;
+    background-color: #ffa500;
+    box-shadow: 0px 0px 10px #ffa500;
     margin-left: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: .8;
+    opacity: 1;
     cursor: pointer;
   }
   .twitterBtn img {
-    width: 12px !important;
+    width: 25px !important;
+    border-radius: 25%;
   }
   .discordBtn img {
-    width: 10px !important;
+    width: 25px !important;
+    border-radius: 25%;
   }
   .discordBtn:hover, .twitterBtn:hover {
     opacity: 1;
@@ -369,12 +375,12 @@ export const baseStyles = css`
   /* Header section ends here */
   .sidebarTitle {
     /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
-    background-color: #f8f8f8;
+    background-color: #ffa500;
     padding: 18px 16px;
     font-family: 'Poppins';
     font-size: 18px;
     font-weight: 600;
-    color: #001934;
+    color: #ffa500;
     display: flex;
     align-items: center;
   }
@@ -383,29 +389,17 @@ export const baseStyles = css`
     display: none;
   }
 
-  .sidebarTitle a {
-    color: #001934;
-  }
-
-  .greenCircle {
-    width: 8px;
-    height: 8px;
-    background-color: #1cd3c6;
-    border-radius: 50%;
-    margin: 0 12px;
-  }
-
   .headerNav {
     font-family: 'Roboto';
     padding: 0px 24px;
-    color: #001933;
+    color: #080808;
     font-size: 16px;
     font-weight: 500;
     line-height: 1em;
   }
 
   .headerNav a {
-    color: #001933;
+    color: #080808;
     text-decoration: none;
   }
 
@@ -450,7 +444,7 @@ export const baseStyles = css`
   }
 
   .hideFrontLine .active > a {
-    background-color: #1ed3c6;
+    background-color: #ffa500;
     color: #fff !important;
   }
   .firstLevel ul li .collapser svg path {
@@ -461,7 +455,7 @@ export const baseStyles = css`
   }
 
   .firstLevel ul .item ul .item {
-    border-left: 1px solid #e6ecf1;
+    border-left: 1px solid #080808;
   }
 
   .sideBarUL .item {
@@ -470,7 +464,7 @@ export const baseStyles = css`
   }
 
   .sideBarUL .item > a {
-    color: #1ED3C6;
+    color: #ffa500;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -481,12 +475,12 @@ export const baseStyles = css`
   }
 
   .showFrontLine .item > a:hover {
-    background-color: #001933;
+    background-color: #080808;
   }
 
   .showFrontLine .active > a {
     /* color: #fff; */
-    background-color: #001933;
+    background-color: #080808;
   }
 
   .sideBarUL .item .item {
@@ -498,7 +492,7 @@ export const baseStyles = css`
   }
 
   .showFrontLine .item .item {
-    border-left: 1px solid #e6ecf1;
+    border-left: 1px solid #080808;
     border-left-color: rgb(230, 236, 241);
     padding: 0;
     width: calc(100% - 16px) !important;
@@ -508,7 +502,7 @@ export const baseStyles = css`
     border-color: rgb(230, 236, 241) !important;
     border-style: solid none solid solid;
     border-width: 1px 0px 1px 1px;
-    background-color: #1ed3c6 !important;
+    background-color: #ffa500 !important;
     color: #fff;
   }
 
@@ -549,7 +543,7 @@ export const baseStyles = css`
     display: block;
     margin: 0px;
     padding: 0px;
-    color: #6e6e6e;
+    color: #080808;
   }
 
   .smallContent span {
@@ -765,6 +759,7 @@ export const baseStyles = css`
     }
     .topnav.responsive .visibleMobile {
       display: block;
+      
     }
     .topnav .navBarUL {
       display: none;
@@ -814,7 +809,7 @@ export const baseStyles = css`
       position: absolute;
       left: 11px;
       top: 15px;
-      background: #fff;
+      background: #ffa500;
     }
 
     .navBarHeader {
@@ -822,6 +817,7 @@ export const baseStyles = css`
       min-width: auto;
       padding-right: 0;
       align-items: center;
+      font-size: 50px;
     }
 
     .navBarBrand {

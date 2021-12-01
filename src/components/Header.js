@@ -43,10 +43,10 @@ function myFunction() {
 const StyledBgDiv = styled('div')`
   height: 60px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #f8f8f8;
+  background-color: #080808;
   position: relative;
   display: none;
-  background: ${(props) => (props.isDarkThemeActive ? '#001932' : undefined)};
+  background: ${(props) => (props.isDarkThemeActive ? '#080808' : undefined)};
 
   @media (max-width: 767px) {
     display: block;
@@ -80,9 +80,9 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
 
       const twitter = require('./images/twitter.svg');
 
-      const discordBrandsBlock = require('./images/discord-brands-block.svg');
+      const discordBrandsBlock = require('./images/twitter.svg');
 
-      const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
+      const twitterBrandsBlock = require('./images/twitter.svg');
 
       const {
         site: {
@@ -90,23 +90,15 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         },
       } = data;
 
-      const finalLogoLink = logo.link !== '' ? logo.link : 'https://hasura.io/';
+      const finalLogoLink = logo.link !== '' ? logo.link : 'https://twitter.com/minku_singhh';
 
       return (
         <div className={'navBarWrapper'}>
           <nav className={'navBarDefault'}>
             <div className={'navBarHeader'}>
               <Link to={finalLogoLink} className={'navBarBrand'}>
-                <img
-                  className={'img-responsive displayInline'}
-                  src={logo.image !== '' ? logo.image : logoImg}
-                  alt={'logo'}
-                />
+                <h1>👾Minku Singh</h1>
               </Link>
-              <div
-                className={'headerTitle displayInline'}
-                dangerouslySetInnerHTML={{ __html: headerTitle }}
-              />
             </div>
             {config.header.social ? (
               <ul
@@ -151,7 +143,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 {tweetText !== '' ? (
                   <li>
                     <a
-                      href={'https://twitter.com/intent/tweet?&text=' + tweetText}
+                      href={'https://twitter.com/minku_singhh' + tweetText}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -172,13 +164,12 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 ) : null}
                 {githubUrl !== '' ? (
                   <li className={'githubBtn'}>
-                    <GitHubButton
+                    {/* <GitHubButton
                       href={githubUrl}
-                      data-show-count="true"
+                      data-show-count="false"
                       aria-label="Star on GitHub"
                     >
-                      Star
-                    </GitHubButton>
+                    </GitHubButton> */}
                   </li>
                 ) : null}
                 <li>
