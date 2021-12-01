@@ -97,7 +97,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
           <nav className={'navBarDefault'}>
             <div className={'navBarHeader'}>
               <Link to={finalLogoLink} className={'navBarBrand'}>
-                <h1>👾Minku Singh</h1>
+                <h1>Minku Singh</h1>
               </Link>
             </div>
             {config.header.social ? (
