@@ -90,7 +90,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         },
       } = data;
 
-      const finalLogoLink = logo.link !== '' ? logo.link : 'https://twitter.com/minku_singhh';
+      const finalLogoLink = logo.link !== '' ? logo.link : 'https://minkusingh.netlify.app/';
 
       return (
         <div className={'navBarWrapper'}>
