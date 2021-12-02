@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-metaTitle: "about me"
+metaTitle: "Minku Singh"
 metaDescription: "I'll be introducing myself"
 ---
 
