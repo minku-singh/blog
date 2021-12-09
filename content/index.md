@@ -10,6 +10,6 @@ I am a Junior Computer Engineering student. I love building things with <b>JavaS
 
 When I am not coding 👩‍💻, I write real/fictional stories 🎴 , which you can find in the <a title = "Blog" href = "./blog/">blog</a> section.
 
-I love spreading what I learn, due to which I have started writing about JavaScript in <a title = "JavaScript" href = "./javascript/">JavaScript section</a> and about Data Structures and Algorithms in <a title = "DSA" href = "./dsa/"> DSA section</a>.
+I love spreading what I learn, due to which I have started writing about JavaScript in <a title = "JavaScript" href = "./javascript/">JavaScript </a>section and about Data Structures and Algorithms in <a title = "DSA" href = "./dsa/"> DSA </a>section.
 
 
